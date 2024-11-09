@@ -1,0 +1,183 @@
+/* Configuración de fuentes y colores */
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32'%3E%3Cg fill='%23ca9c00' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 24h4v2H0v-2zm0 4h6v2H0v-2zm0-8h2v2H0v-2zM0 0h4v2H0V0zm0 4h2v2H0V4zm16 20h-6v2h6v-2zm0 4H8v2h8v-2zm0-8h-4v2h4v-2zm0-20h-6v2h6V0zm0 4h-4v2h4V4zm-2 12h2v2h-2v-2zm0-8h2v2h-2V8zM2 8h10v2H2V8zm0 8h10v2H2v-2zm-2-4h14v2H0v-2zm4-8h6v2H4V4zm0 16h6v2H4v-2zM6 0h2v2H6V0zm0 24h2v2H6v-2z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Estilo de cabecera */
+.header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #695900;
+}
+
+.header h1 {
+    font-family: "Shadows Into Light", serif;
+    font-size: 5em;
+    color: #ffc53e;
+    text-shadow: 2px 2px #45454577;
+    margin: 0;
+}
+
+/* Menú de navegación */
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.nav a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f8f8f2;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #e91111;
+}
+
+/* Contenido principal */
+.contenido {
+    padding: 50px;
+    text-align: center;
+    min-height: calc(100vh - 160px);
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+/* Estilos de artículo */
+.articulo {
+    background-color: #ffb86c;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.articulo h2 {
+    color: #282a36;
+    font-size: 2.5em;
+}
+
+.articulo p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #282a36;
+}
+
+/* Botón de leer más */
+.btn-leer-mas {
+    background-color: #724706a8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+}
+
+.btn-leer-mas:hover {
+    background-color: #ff8c00;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #000000;
+    color: #f8f8f2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos Responsive */
+@media (max-width: 1200px) {
+    .header h1 {
+        font-size: 4em;
+    }
+    .nav a {
+        font-size: 0.9em;
+    }
+    .articulo {
+        max-width: 90%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 3em;
+    }
+    .nav a {
+        font-size: 0.8em;
+        margin: 0 10px;
+    }
+    .contenido {
+        padding: 20px;
+    }
+    .articulo h2 {
+        font-size: 2em;
+    }
+    .articulo p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav a {
+        font-size: 0.8em;
+        margin: 5px 0;
+    }
+    .contenido {
+        padding: 15px;
+    }
+    .articulo {
+        max-width: 100%;
+        padding: 15px;
+        margin: 10px;
+    }
+}
+
+/* Barra de desplazamiento personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #623b00;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #e65100;
+}
